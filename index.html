@@ -3,92 +3,96 @@
 <head>
     <meta charset="UTF-8" />
        <title>Yury</title>
+        <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="avatar.jpg" width="200" alt="Тут моя фотка" />
-            </td>
-            <td>
-                <h1>Юрий Чайковский</h1>
-                <p><em>Я работаю в <strong>Макдаке</strong></em></p>
-                <p>Люблю путешествовать</p>
-            </td>
-        </tr>
-    </table>
-   
-    <hr>
+   <div class="container">
+        <div class="info">
+            <img src="avatar.jpg" alt="Тут моя фотка" class="avatar" />
 
-    <h2>Связь</h2>
-<ul>
-    <li><a href="https://www.instagram.com/yury_chaikousky" target="_blank">Инстаграмм</a></li>
-    <li><a href="https://vk.com/stanly3000" target="_blank">ВК</a></li>
-</ul>
-<hr>
-    <h2>Хобби</h2>
-    <ol>
-        <li>коньки</li>
-        <li>спорт</li>
-        <li>Серфинг</li>
-        <li>путешествия</li>
-    </ol>
+            <div class="info-text">
+                <h1>Юрий Чайковский</h1>                  
+                <p>Я работаю в <strong>McDonald's</strong></p>                 
+                <p>Люблю путешествовать, заниматься спортом и учусь программировать</p>  
+                
+                <h4>Мои социальные сети</h4>
+                    
+                        <a href="https://www.instagram.com/yury_chaikousky" target="_blank">Инстаграмм</a>
+                    |
+                        <a href="https://vk.com/stanly3000" target="_blank">ВК</a>
+            </div>
 
-    <hr>
+        </div>        
+
+        <div class="card bg-yellow">
+            <h2>Хобби</h2>
+                <ol class="list">
+                    <li>Фитнес</li>
+                    <li>Программирование</li>
+                    <li>Серфинг</li>
+                    <li>Путешествия</li>
+                    <li>Играю в WoW</li>
+                </ol>
+        </div>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+                <table class="table"> 
+                        <tr>
+                            <td>McDonald's Minsk</td>
+                            <td>Менеджер</td>
+                            <td>2011-2019</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>McDonald's Prague</td>
+                            <td>2 заместитель директора</td>
+                            <td>2019-по сей день</td>
+                        </tr>
+                       
+                </table>
+        </div>
     
-    <h2>Опыт работы</h2>
-    <table border="2">
-        <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Макдак</td>
-                <td>Менеджер</td>
-                <td>2011-2019</td>
-             </tr>
-            <tr>
-            <td>Макдак Прага</td>
-            <td>Менеджер</td>
-            <td>2019-2023</td>
-            </tr>
-        </tbody>   
+        <div class="card bg-red">
+            <h2>WoW Guide</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.allmmorpg.ru/"> Гайды вов</a>
+            </ul>    
+        </div>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+                    <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>   
 
-    </table>
-    
-    <hr>
-    
-    <H2>WoW</H2>
-    <a href="Wow.html" target="_blank">Посмотреть</a>
-    
-    <hr>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
 
-    <h2>Связаться со мной</h2>
-    
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                </div>
 
-<br>
+                <div class="form-group">
+                    <textarea id="text" cols="15" rows="2"></textarea>
+                </div>
 
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
+                <input class="btn" type="submit" value="Связаться!">            
+            </form>
+        </div>
 
-<br>
+            <div class="position">
+                <div class="box"></div>
+            </div>
 
-        <label for="text">Ваше сообщение:</label>
+    </div>
 
-<br>
 
-        <textarea name="" id="text" cols="30" rows="5"></textarea>
-
-<br>
-
-        <input type="submit" value="Связаться!">
-    </form>
+    <div style="margin-bottom: 500px;"></div>
 </body>
 </html> 
